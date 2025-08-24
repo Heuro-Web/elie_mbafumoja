@@ -187,10 +187,16 @@ footer p {
     }  
 
 @media (max-width: 990px){
-    .container .vue{
+     header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
+
+    header .container .vue{
         display: block;
     }
-    .container .com{
+    header .container .com{
         display: none;
     }
     .links{
