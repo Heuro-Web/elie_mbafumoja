@@ -313,6 +313,9 @@ footer p {
         #hero h2 {  
             font-size: 1.8em; /* Réduire la taille de la police du titre pour mobile */  
         }  
+        .services{
+            flex-wrap: wrap;
+        }
         
         footer ul li {  
             font-size: 20px; /* Réduire la taille de la police du footer sur mobile */  
