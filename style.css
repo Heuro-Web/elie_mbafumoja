@@ -29,7 +29,7 @@ header {
     /* background: #35424a;   */
     background-color: yellowgreen;
     color: #ffffff;  
-    border-radius: 6px;  
+    /* border-radius: 6px;   */
     height: 70px;  
     text-align: center; /* Aligner le texte au centre */  
 }  
@@ -118,38 +118,57 @@ nav ul li a:hover {
     font-weight: 700;  
 }  
 
+/* Section team */
 
-
-#contact .container{
-    gap: 20px;
-    /* display: flex; */
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.teams .member{
+    width: 300px;
+    background-color: #e8491d;
+    border-radius: 0px 0px 7px 7px;
+}
+.teams .member img{
+    width: 300px;
+    margin: auto;
+    display: block;
+    height: 300px;
+}
+.teams .member h3{
     text-align: center;
 }
-#contact .container h3{
+.teams .member p{
+    padding: 5px;
+    text-align: justify;
+}
+
+
+#contact .form{
+    display: flex;
+}
+#contact .form h3{
     font-size: 30px;
 }
-#contact .container form{
-    background-color: #35424a;
-    width: 500px;
+
+#contact .form form{
+    background: linear-gradient(yellow, black, white, red);
+    width: 400px;
     padding: 12px;
+    border-radius: 5px 10px 5px 10px;
     margin: auto;
 }
-#contact .container form input[type="text"],
-#contact .container form input[type="email"],
-#contact .container form input[type="submit"],
-#contact .container form textarea{
+#contact .form form input[type="text"],
+#contact .form form input[type="email"],
+#contact .form form input[type="submit"],
+#contact .form form textarea{
     width: 100%;
     padding: 12px;
     font-family: "Poppins", sans-serif;
     border-radius: 10px 0 10px 0;
-}
-#contact .img p{
-    margin: 0;
-}
-#contact .img img{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
 }
 
 footer {  
@@ -187,10 +206,23 @@ footer p {
     }  
 
 @media (max-width: 990px){
+    img, video, iframe{
+        width: 100%;
+        max-width: 100%;
+    }
+    body, html{
+        width: 100%;
+        /* overflow: hidden; */
+    }
+    .container{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
      header{
         position: fixed;
         z-index: 10;
         width: 100%;
+        top: 0;
     }
 
     header .container .vue{
@@ -210,15 +242,23 @@ footer p {
         width: 100%;
         margin: 0 10px;
     }
-    header{
-        /* padding: 1.6rem 0; */
+    #contact .container{
+        justify-content: center;
+        gap: 20px;
     }
+    #contact .form{
+        margin: 2rem;
+    }
+    #contact .form img{
+        margin-top: ;
+        width: 300px;
+        margin: 0;
+        /* height: 200px; */
+}
 }
     /* Styles pour mobile */  
 @media (max-width: 600px) {  
-    body, html{
-        width: 100%;
-    }
+
     header h1 {  
             display: block;  /* Changer le display pour block sur mobile */  
             text-align: center;  
