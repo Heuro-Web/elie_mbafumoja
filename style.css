@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');  
+
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6;  
+    flex-wrap: wrap;  
+    margin: 0; /* Suppression de la marge par défaut */  
+}  
+
+.container {  
+    width: 70%;  
+    max-width: 1200px;  
+    margin: auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+header {  
+    background: #35424a;  
+    color: #ffffff;  
+    border-radius: 6px;  
+    padding: 3rem 0;   
+    text-align: center; /* Aligner le texte au centre */  
+}  
+
+header h1 {  
+    display: inline-block; /* Changer le float pour un display inline-block */  
+}  
+
+header h1:hover {  
+    transition: .50s;  
+    color: #abb1b4;  
+}  
+
+nav ul {  
+    list-style: none;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin-left: 20px;   
+}  
+
+nav ul li a {  
+    font-size: 25px;  
+    color: #ffffff;  
+    text-decoration: none;  
+    transition: color 0.3s;  
+}  
+
+nav ul li a:hover {  
+    color: #e8491d;  
+}  
+
+#hero { 
+    background: url("https://cdn.pixabay.com/photo/2020/02/08/14/28/camera-4830248_640.jpg") no-repeat center center/cover;
+ 
+    color: #ffffff;  
+    text-align: center;  
+    padding: 100px 0;  
+}  
+
+#hero h2 {  
+    font-size: 2.5em;  
+}  
+
+#hero .container p {  
+    margin-bottom: 30px;  
+    color:rgba(41, 248, 0, 0.938);  
+    font-weight: 700;  
+}  
+
+.btn {  
+    background: #e8491d;  
+    color: #ffffff;  
+    border-radius: 5px;  
+    padding: 7px 20px;  
+    text-decoration: none;  
+}  
+
+section {  
+    padding: 60px 0;  
+}  
+
+.service-grid{  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+    gap: 20px;  
+}  
+.team-grid{
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(250px, 1fr));  
+    gap: 20px;  
+}
+#services .container h3, #about .container h3, #team .container h3 {  
+    font-family: "Poppins", sans-serif;  
+    font-weight: 800;  
+    margin-bottom: 20px;  
+}  
+
+.service-grid, .service-item a {  
+    text-decoration: none;  
+}  
+
+.service-item, .team-member {  
+    background: #f4f4f4;  
+    padding: 20px;  
+    border-radius: 8px;  
+    text-align: center;  
+} 
+
+.service-item a{
+    color: #35424a;
+}
+
+.team-member img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 70%;  
+} 
+
+#about li a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #35424a;
+}
+
+#contact .container{
+    gap: 20px;
+    /* display: flex; */
+    text-align: center;
+}
+#contact .container h3{
+    font-size: 30px;
+}
+#contact .container form{
+    background-color: #35424a;
+    width: 500px;
+    padding: 12px;
+    margin: auto;
+}
+#contact .container form input[type="text"],
+#contact .container form input[type="email"],
+#contact .container form textarea{
+    width: 100%;
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px 0 10px 0;
+}
+#contact .img p{
+    margin: 0;
+}
+#contact .img img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+footer {  
+    background: #35424a;  
+    color: #ffffff;  
+    text-align: center;  
+    padding: 20px 0;  
+}  
+
+footer ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+footer ul li {  
+    font-size: 25px;  
+    display: inline;  
+    margin-left: 10px;  
+}  
+
+footer ul li a {  
+    color: #f1dfdf;  
+    text-decoration: none;  
+}  
+
+
+   
+
+footer ul li a:hover {  
+        color: #e8491d;  
+    }  
+    
+footer p {  
+        font-family: "Poppins", sans-serif;  
+    }  
+    
+    /* Styles pour mobile */  
+@media (max-width: 600px) {  
+    body, html{
+        width: 100%;
+    }
+    header h1 {  
+            display: block;  /* Changer le display pour block sur mobile */  
+            text-align: center;  
+        }  
+    
+    nav {  
+            text-align: center;  
+        }   
+    
+    nav ul li {  
+            display: block;  /* Afficher les liens de navigation en bloc */  
+            margin: 10px 0; /* Marge verticale pour les liens */  
+        }  
+    
+        body {  
+            margin: 10px 0; /* Réduire les marges du body sur mobile */  
+        }   
+    
+        #hero h2 {  
+            font-size: 1.8em; /* Réduire la taille de la police du titre pour mobile */  
+        }  
+        
+        .btn {  
+            padding: 10px 15px; /* Augmenter la taille des boutons sur mobile */  
+        }  
+    
+        .service-item, .team-member {  
+            padding: 15px; /* Réduire le padding des cartes sur mobile */  
+        }  
+    
+        footer ul li {  
+            font-size: 20px; /* Réduire la taille de la police du footer sur mobile */  
+        }
+        #contact .container form{
+            width: 100% !important;
+        }  
+        .team-grid{
+            display: flex;
+            width: 100%;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        .team-member{
+            flex-shrink: 0;
+            box-sizing: border-box;
+            scroll-snap-align: center;
+            width: 100%;
+        }
+    }  
+    
+    /* Styles pour tablettes */  
+    @media (min-width: 601px) and (max-width: 1024px) {  
+        nav ul li {  
+            margin-left: 15px; /* Ajuster le margin pour les tablettes */  
+        }  
+    
+        #hero h2 {  
+            font-size: 2.2em; /* Ajuster la taille de la police du titre sur tablette */  
+        }  
+    
+        .service-item, .team-member {  
+            padding: 18px; /* Ajuster le padding pour les articles sur tablette */  
+        }  
+    
+        footer ul li {  
+            font-size: 25px; /* Ajuster la taille de la police du footer sur tablette */  
+        }  
+    }  
