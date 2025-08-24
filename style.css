@@ -97,15 +97,18 @@ nav ul li a:hover {
 }
 
 #hero { 
-    background: url('https://cdn.pixabay.com/photo/2014/08/29/14/53/camera-431119_1280.jpg');
+    background: url('https://cdn.pixabay.com/photo/2019/09/02/10/36/summer-4446981_640.jpg');
     color: #ffffff;  
     background-size: cover;
     background-position: center;
     text-align: center;  
-    padding: 100px 0;  
+    /* padding: 100px 0;   */
 }  
 #hero .container{
     background: linear-gradient(black, red, yellow);
+}
+#hero{
+
 }
 
 #hero h2 {  
@@ -118,19 +121,53 @@ nav ul li a:hover {
     font-weight: 700;  
 }  
 
-/* Section team */
+#services .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.services .service{
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 10px;
+}
+.services .service h3{
+    text-align: center;
+}
+.services .service img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
 
+/* Section team */
+#teams h1,
+#contact h1,
+#services h1{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .teams{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
 .teams .member{
     width: 300px;
-    background-color: #e8491d;
+    border: 1px solid black;
     border-radius: 0px 0px 7px 7px;
+}
+.teams .member .info{
+    background-color: #8f4a38;
 }
 .teams .member img{
     width: 300px;
@@ -172,7 +209,7 @@ nav ul li a:hover {
 }
 
 footer {  
-    background: #35424a;  
+    background-color: yellowgreen;
     color: #ffffff;  
     text-align: center;  
     padding: 20px 0;  
@@ -242,10 +279,6 @@ footer p {
         width: 100%;
         margin: 0 10px;
     }
-    #contact .container{
-        justify-content: center;
-        gap: 20px;
-    }
     #contact .form{
         margin: 2rem;
     }
@@ -259,19 +292,19 @@ footer p {
     /* Styles pour mobile */  
 @media (max-width: 600px) {  
 
-    header h1 {  
-            display: block;  /* Changer le display pour block sur mobile */  
-            text-align: center;  
-        }  
-    
-    nav {  
-            text-align: center;  
-        }   
-    
-    nav ul li {  
+        header h1 {  
+                display: block;  /* Changer le display pour block sur mobile */  
+                text-align: center;  
+            }  
+        
+        nav {  
+                text-align: center;  
+            }   
+        
+        nav ul li {  
             display: block;  /* Afficher les liens de navigation en bloc */  
             margin: 10px 0; /* Marge verticale pour les liens */  
-        }  
+        }
     
         body {  
             margin: 10px 0; /* Réduire les marges du body sur mobile */  
@@ -281,48 +314,28 @@ footer p {
             font-size: 1.8em; /* Réduire la taille de la police du titre pour mobile */  
         }  
         
-        .btn {  
-            padding: 10px 15px; /* Augmenter la taille des boutons sur mobile */  
-        }  
-    
-        .service-item, .team-member {  
-            padding: 15px; /* Réduire le padding des cartes sur mobile */  
-        }  
-    
         footer ul li {  
             font-size: 20px; /* Réduire la taille de la police du footer sur mobile */  
         }
-        #contact .container form{
-            width: 100% !important;
-        }  
-        .team-grid{
-            display: flex;
-            width: 100%;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
+        #contact .form{
+            flex-wrap: wrap;
         }
-        .team-member{
-            flex-shrink: 0;
-            box-sizing: border-box;
-            scroll-snap-align: center;
+        #contact .form form{
             width: 100%;
+        }  
+        footer .container{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+        footer p{
+            font-size: 1rem;
         }
     }  
     
     /* Styles pour tablettes */  
     @media (min-width: 601px) and (max-width: 1024px) {  
-        nav ul li {  
-            margin-left: 15px; /* Ajuster le margin pour les tablettes */  
-        }  
-    
-        #hero h2 {  
-            font-size: 2.2em; /* Ajuster la taille de la police du titre sur tablette */  
-        }  
-    
-        .service-item, .team-member {  
-            padding: 18px; /* Ajuster le padding pour les articles sur tablette */  
-        }  
-    
+       
         footer ul li {  
             font-size: 25px; /* Ajuster la taille de la police du footer sur tablette */  
         }  
